@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <title>Convertisseur de monnaie</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Une description de la page" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <link rel="shortcut icon" href="" />
+  </head>
+
+  <body>
+    <h1>Convertisseur de monnaie</h1>
+    <form>
+      <div class="block-container">
+        <div class="first-block">
+          <label for="from"><h2>Monnaie d'entrée</h2></label>
+          <input type="number" name="from" id="from" placeholder="0,00" />
+
+          <label for="from-currencies"></label>
+          <select name="from-currencies" id="from-currencies">
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="BGN">Bulgarian Lev (BGN)</option>
+            <option value="BRL">Brazilian Real(BRL)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="USD">Dollar Americain(USD)</option>
+          </select>
+        </div>
+
+        <button type="button" class="switch">Inverser</button>
+
+        <div class="second-block">
+          <label for="to"><h2>Monnaie de sortie</h2></label>
+          <input type="number" name="to" id="to" placeholder="0,00" />
+
+          <label for="to-currencies"></label>
+          <select name="to-currencies" id="to-currencies">
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="BGN">Bulgarian Lev (BGN)</option>
+            <option value="BRL">Brazilian Real(BRL)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="USD">Dollar Americain(USD)</option>
+          </select>
+        </div>
+        <input type="submit" value="Convertir !" />
+      </div>
+    </form>
+  </body>
+</html>
