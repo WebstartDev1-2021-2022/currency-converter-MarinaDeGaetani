@@ -7,14 +7,16 @@ body {
 }
 
 h1 {
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
-  font-weight: 600px;
+  font-weight: 500px;
   margin: 50px 70px;
 }
 
 div.block-container {
   display: flex;
   flex-direction: column;
+  align-content: stretch;
   align-items: center;
   flex-wrap: wrap;
   border-radius: 9px;
@@ -27,7 +29,7 @@ div.first-block,
 div.second-block {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 input,
@@ -80,12 +82,13 @@ button.switch {
     flex-direction: row;
     padding: 50px 81px;
     justify-content: center;
+    margin: 20px;
   }
 
   div.first-block,
   div.second-block {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: stretch;
   }
 }

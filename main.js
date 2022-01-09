@@ -9,31 +9,33 @@ const from = document.querySelector("form");
 
 const switchCurrencies = (event) => {
   event.preventDefault();
-  // TODO : inverser les monnaies from et to
+  // Inverser les monnaies from et to
   console.log("le bouton switch a été cliqué");
 };
 
 const submitForm = async (event) => {
+  // Empecher la page de se recharger après la soumission du formulaire
   event.preventDefault();
-
-  // récuper un valeur
+  // Récupérer la valeur tapée dans le champ from
   const fromValue = inputFrom.value;
-
-  //Récupérer la valeur du selct from
+  //Récupérer la valeur du select from
   const currencyFrom = selectFromCurrencies.value;
-  //Récupérer la valeur du selct to
+  //Récupérer la valeur du select to
   const currencyTo = selectToCurrencies.value;
-  // TODO: verifier que from & to ne sont pas egaux
+
+  // Vérifier que from & to ne sont pas egaux
   if (currencyFrom === currencyTo) {
+    alert("Vous avez mit les mêmes monnaies !");
+    return;
   }
-  // TODO : afficher une alerte si le champs from est vide
+  // Afficher une alerte si le champs from est vide
   if (!fromValue) {
     alert("Vous n'avez pas entré de valeur!");
     return;
   }
 
   console.log("fromValue", fromValue);
-  // TODO : lancer la requête à l'API en lui fournissant la valeur tapée dans from
+  // Lancer la requête à l'API en lui fournissant la valeur tapée dans from
   try {
     const response = await fetch(
       `https://api.frankfurter.app/latest?amount=${fromValue}&from=${currencyFrom}&to=${currencyTo}`
