@@ -1,16 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap");
 body {
   background-color: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   background-repeat: no-repeat;
-  font-family: "Lato", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 300px;
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 500px;
-  margin: 50px 70px;
+  margin: 30px;
 }
 
 div.block-container {
@@ -49,11 +49,15 @@ div.second-block {
 
 input,
 select {
+  font-family: inherit;
+  background-color: #fdfcfb;
   border-radius: 9px;
   border-style: none;
+  outline: none;
 }
 
 input {
+  font-family: inherit;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -65,8 +69,12 @@ select {
 }
 
 h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 15px;
   font-size: 20px;
+  font-weight: 300;
 }
 
 [type="number"] {
@@ -81,16 +89,19 @@ h2 {
   padding: 10px 15px;
   background-color: #fdfcfb;
   color: black;
+  cursor: pointer;
 }
 
-button.switch {
-  border-radius: 9px;
-  border-style: none;
-  font-size: 18px;
+[type="button"] {
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+img {
+  width: 30px;
   margin: 10px;
-  padding: 10px 15px;
-  background-color: #fdfcfb;
-  color: black;
 }
 
 @media screen and (max-width: 766px) {
