@@ -15,8 +15,8 @@
     <h1>Convertisseur de monnaie</h1>
     <form>
       <div class="block-container">
+        <label for="from"><h2>Monnaie d'entrée</h2></label>
         <div class="first-block">
-          <label for="from"><h2>Monnaie d'entrée</h2></label>
           <input type="number" name="from" id="from" placeholder="0,00" />
 
           <label for="from-currencies"></label>
@@ -29,12 +29,10 @@
           </select>
         </div>
 
-        <button type="button" class="switch">
-          <img src="ressources/fleches.png" alt="flèches" />
-        </button>
+        <button type="button" class="switch">Inverser</button>
 
+        <label for="to"><h2>Monnaie de sortie</h2></label>
         <div class="second-block">
-          <label for="to"><h2>Monnaie de sortie</h2></label>
           <input type="number" name="to" id="to" placeholder="0,00" disabled />
 
           <label for="to-currencies"></label>
