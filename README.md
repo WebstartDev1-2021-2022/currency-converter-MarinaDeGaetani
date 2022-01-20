@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Liens Netlify :
 =======
 
