@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Liens Netlify :
 
 currency-convertor-mdg.netlify.app
